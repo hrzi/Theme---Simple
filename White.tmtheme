@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Hrzi</string>
+	<key>comment</key>
+	<string>Simple Light Color Scheme with CFML for Sublime Text</string>
+	<key>name</key>
+	<string>Simple Light Color Sheme</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>caret</key>
+				<string>#000000</string>
+				<key>foreground</key>
+				<string>#000000</string>
+				<key>invisibles</key>
+				<string>#FF0000</string>
+				<key>lineHighlight</key>
+				<string>#90909020</string>
+				<key>selection</key>
+				<string>#8080FF40</string>
+				<key>selectionBorder</key>
+				<string>#C0C0FF</string>
+				<key>findHighlight</key>
+				<string>#8080FF</string>
+				<key>findHighlightForeground</key>
+				<string>#FFFFC0</string>
+				<key>gutterForeground</key>
+				<string>#B9B9B9</string>
+				<key>gutter</key>
+				<string>#F8F8F8</string>
+				<key>guide</key>
+				<string>#CCCCCC</string>
+				<key>stackGuide</key>
+				<string>#CCCCCC</string>
+				<key>activeGuide</key>
+				<string>#666666</string>
+				<key>bracketsForeground</key>
+				<string>#FF0000</string>
+				<key>bracketsOptions</key>
+				<string>foreground</string>
+				<key>bracketContentsForeground</key>
+				<string>#FF0000</string>
+				<key>bracketContentsOptions</key>
+				<string>stippled_underline foreground</string>
+				<key>tagsForeground</key>
+				<string>#CC0000</string>
+				<key>tagsOptions</key>
+				<!-- <string>stippled_underline foreground</string> -->
+				<string>stippled_underline foreground</string>
+			</dict>
+		</dict>
+		<!-- Comments -->
+		<dict>
+			<key>name</key>
+			<string>Comments</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#808080</string>
+				<key>background</key>
+				<string>#FEFFC9</string>
+			</dict>
+		</dict>
+		<!-- Invalid -->
+		<dict>
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#CC000020</string>
+				<key>fontStyle</key>
+				<string></string>
+				<!-- <key>foreground</key>
+				<string>#CC0000</string> -->
+			</dict>
+		</dict>
+		<!-- Numbers -->
+		<dict>
+			<key>name</key>
+			<string>Numeric</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F00000</string>
+			</dict>
+		</dict>
+		<!-- Strings -->
+		<dict>
+			<key>name</key>
+			<string>Strings</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0000F0</string>
+			</dict>
+		</dict>
+		<!-- Quoted strings -->
+		<dict>
+			<key>name</key>
+			<string>Single Quoted, Double Quoted</string>
+			<key>scope</key>
+			<string>string.quoted.single, string.quoted.double</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0000FF</string>
+			</dict>
+		</dict>			
+		<!-- Constants -->
+		<dict>
+			<key>name</key>
+			<string>Built-in Constants</string>
+			<key>scope</key>
+			<string>constant.language, constant.character, constant.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0000C0</string>
+				<!--<key>fontStyle</key>
+				<string>bold</string>-->
+			</dict>
+		</dict>
+		<!-- Storages -->
+		<dict>
+			<key>name</key>
+			<string>Storages</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#000080</string>
+			</dict>
+		</dict>
+		<!-- Keywords -->
+		<dict>
+			<key>name</key>
+			<string>Keywords</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000090</string>
+			</dict>
+		</dict>
+		<!-- Functions -->
+		<dict>
+			<key>name</key>
+			<string>Functions</string>
+			<key>scope</key>
+			<string>entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<!-- Function arguments -->
+		<dict>
+			<key>name</key>
+			<string>Function arguments</string>
+			<key>scope</key>
+			<string>variable.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#404040</string>
+			</dict>
+		</dict> 
+
+		<!-- ---------------------------------------------------------- -->
+		<!-- coldfusion (cfml) ---------------------------------------- -->
+		<!-- ---------------------------------------------------------- -->
+		<!-- cfml in quoted strings -->
+		<dict>
+			<key>name</key>
+			<string>cfml: in quoted strings</string>
+			<key>scope</key>
+			<string>string.quoted.single meta.name.interpolated.hash.cfml, string.quoted.single variable.language.cfscript, string.quoted.single variable.other.cfscript, string.quoted.double meta.name.interpolated.hash.cfml, string.quoted.single.cfml punctuation.definition.function-parameters, string.quoted.double variable.language.cfscript, string.quoted.double variable.other.cfscript</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0000FF</string>
+			</dict>
+		</dict>			
+		<!-- tags -->
+		<dict>
+			<key>name</key>
+			<string>cfml: coldfusion tag</string>
+			<key>scope</key>
+			<string>meta.tag.inline.cf, meta.tag.block.cf</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#900000</string>
+			</dict>
+		</dict>
+		<!-- functions --> 
+		<dict>
+			<key>name</key>
+			<string>cfml: function names and braces</string>
+			<key>scope</key>
+			<string>source.sql.embedded support.function, source.sql.embedded punctuation.definition.function-parameters, source.cfscript.embedded.cfml entity.name.function.cfscript, source.cfscript.embedded.cfml support.function, source.cfscript.embedded.cfml punctuation.definition.function-parameters, source.cfscript.embedded.cfml entity.name.function.cfscript, source.cfscript.embedded.cfml support.function, source.cfscript.embedded.cfml punctuation.definition.function-parameters, source.cfscript.embedded.cfml punctuation.definition.seperator.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#800080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>cfml: udf</string>
+			<key>scope</key>
+			<string>source.cfscript.embedded.cfml entity.name.function-call.cfscript</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#602020</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>cfml: udf arguments</string>
+			<key>scope</key>
+			<string>entity.other.method-parameter.cfscript</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#404040</string>
+			</dict>
+		</dict>
+
+		<!-- variables & SQL -->
+		<dict>
+			<key>name</key>
+			<string>cfml: variables</string>
+			<key>scope</key>
+			<string>meta.tag.block.cf variable, meta.tag.inline.cf variable</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<!-- sql text -->
+		<dict>
+			<key>name</key>
+			<string>cfml: sql plain text</string>
+			<key>scope</key>
+			<string>source.sql.embedded variable.other, source.sql.embedded constant.other</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<!-- cfml inside sql -->
+		<dict>
+			<key>name</key>
+			<string>cfml: variables and function calls inside SQL</string>
+			<key>scope</key>
+			<string>source.sql.embedded variable.language.cfscript, source.sql.embedded variable.other.cfscript, source.sql.embedded meta.name.interpolated.hash.cfml</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<!-- sql operators -->
+		<dict>
+			<key>name</key>
+			<string>cfml: sql operators</string>
+			<key>scope</key>
+			<string>keyword.other.DML, support.function.aggregate.sql, keyword.other.alias.sql, keyword.other.order.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#000090</string>
+			</dict>
+		</dict>
+
+		<!-- ---------------------------------------------------------- -->
+		<!-- html ---------------------------------------------------- --->
+		<!-- ---------------------------------------------------------- -->
+		<!-- tags -->
+		<dict>
+			<key>name</key>
+			<string>html: tags</string>
+			<key>scope</key>
+			<string>meta.tag.no-content.xml, meta.tag.xml, meta.tag.preprocessor.xml, meta.tag.block.any.html, meta.tag.inline.any.html, meta.tag.structure.any.html, meta.tag.any.html, entity.other.attribute-name.html meta.tag.structure.any.html text.html.basic </string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#000099</string>
+			</dict>
+		</dict>
+		<!-- html tag attributes
+		<dict>
+			<key>name</key>
+			<string>Tag attribute</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#000099</string>
+			</dict>
+		</dict> -->
+		<!-- html doctype tags -->
+		<dict>
+			<key>name</key>
+			<string>html: doctype tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.doctype.html, meta.tag.sgml, string.quoted.double.doctype.identifiers-and-DTDs.html</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#0080FF</string>
+			</dict>
+		</dict>
+		<!-- html comments -->
+		<dict>
+			<key>name</key>
+			<string>html: comments</string>
+			<key>scope</key>
+			<string>comment.line.html, comment.block.html</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#808080</string>
+				<key>background</key>
+				<string>#E9E9E9</string>
+			</dict>
+		</dict>
+		<!-- table tags -->
+		<dict>
+			<key>name</key>
+			<string>html: table tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.table.html</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#009999</string>
+			</dict>
+		</dict>
+		<!-- img tags -->
+		<dict>
+			<key>name</key>
+			<string>html: img tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.img.html</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#990099</string>
+			</dict>
+		</dict>
+		<!-- form tags -->
+		<dict>
+			<key>name</key>
+			<string>html: form tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.form.html, entity.name.tag.block.form.html</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FF9900</string>
+			</dict>
+		</dict>
+		<!-- script tags -->
+		<dict>
+			<key>name</key>
+			<string>html: script tags</string>
+			<key>scope</key>
+			<string>text.html.basic entity.name.tag.script, entity.name.tag.script.html, source.js.embedded.html entity.other, source.js.embedded.html punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0066FF</string>
+			</dict>
+		</dict>
+		<!-- anchor tags -->
+		<dict>
+			<key>name</key>
+			<string>html: anchor tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.link.html, entity.link.attribute-name.cfml, meta.tag.inline.link.html</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#008000</string>
+			</dict>
+		</dict>
+
+		<!-- ---------------------------------------------------------- -->
+		<!-- javascript (js) ----------------------------------------- --->
+		<!-- ---------------------------------------------------------- -->
+		<!-- keywords and storage (var) -->
+		<dict>
+			<key>name</key>
+			<string>js: control</string>
+			<key>scope</key>
+			<string>keyword.control.js, keyword.other.js, storage.type.js, storage.modifier.js, storage.type.function.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#000080</string>
+			</dict>
+		</dict>
+		<!-- classes -->
+		<dict>
+			<key>name</key>
+			<string>js: support class</string>
+			<key>scope</key>
+			<string>support.class.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#606090</string>
+			</dict>
+		</dict>
+		<!-- functions -->
+		<dict>
+			<key>name</key>
+			<string>js: support functions</string>
+			<key>scope</key>
+			<string>support.function.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800080</string>
+			</dict>
+		</dict>
+		<!-- ---------------------------------------------------------- -->
+		<!-- stylesheets (CSS) --------------------------------------- --->
+		<!-- ---------------------------------------------------------- -->
+		<!-- 
+		<dict>
+			<key>name</key>
+			<string>css: constant</string>
+			<key>scope</key>
+			<string>constant.numeric.css, constant.other.color.rgb-percentage.css, constant.other.color.rgb-value.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#990000</string>
+			</dict>
+		</dict> -->
+		<!-- classes -->
+		<dict>
+			<key>name</key>
+			<string>css: tag names</string>
+			<key>scope</key>
+			<string>entity.name.tag.css, entity.name.tag.wildcard.css, meta.selector.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<!-- selectors -->
+		<dict>
+			<key>name</key>
+			<string>css: attribute selector</string>
+			<key>scope</key>
+			<string>meta.attribute-selector.css, entity.other.attribute-name.pseudo-class.ui-state.css, entity.other.attribute-name.pseudo-element.css,  entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.id.css</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#600080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css: properties</string>
+			<key>scope</key>
+			<string>support.type.property-name.css, support.type.property-name.media.css, meta.property-name.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#303030</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css: properties</string>
+			<key>scope</key>
+			<string>support.constant.property-value.css, meta.property-value.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0060C0</string>
+			</dict>
+		</dict>
+		<!-- at rules -->
+		<dict>
+			<key>name</key>
+			<string>css: control</string>
+			<key>scope</key>
+			<string>keyword.control.at-rule.charset.css, keyword.control.at-rule.font-face.css, keyword.control.at-rule.import.css, keyword.control.at-rule.media.css, meta.at-rule.media.css support.constant.media.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008080</string>
+			</dict>
+		</dict>
+		<!-- important -->
+		<dict>
+			<key>name</key>
+			<string>css: other keywords</string>
+			<key>scope</key>
+			<string>keyword.other.important.css, keyword.other.unit.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
+<!--		quoted strings
+		<dict>
+			<key>name</key>
+			<string>css: quoted strings</string>
+			<key>scope</key>
+			<string>string.quoted.double.attribute-value.css, string.quoted.double.css, string.quoted.single.css, string.unquoted.attribute-value.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008080</string>
+			</dict>
+		</dict>
+		constant values
+		<dict>
+			<key>name</key>
+			<string>css: support constant</string>
+			<key>scope</key>
+			<string>support.constant.color.w3c-standard-color-name.css, support.constant.font-name.css, support.constant.media.css, support.constant.property-value.css, meta.property-value.css, meta.property-list.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#300090</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css: support function</string>
+			<key>scope</key>
+			<string>support.function.misc.css, support.function.url.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css: properties</string>
+			<key>scope</key>
+			<string>support.type.property-name.css, support.type.property-name.media.css, meta.property-name.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#600060</string>
+			</dict>
+		</dict>
+		other
+		<dict>
+			<key>name</key>
+			<string>css: miscellaneous</string>
+			<key>scope</key>
+			<string>variable.parameter.misc.css, variable.parameter.url.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#606060</string>
+			</dict>
+		</dict>
+-->
+		<!-- ---------------------------------------------------------- -->
+		<!-- json constants ------------------------------------------- -->
+		<!-- ---------------------------------------------------------- -->
+		<dict>
+			<key>name</key>
+			<string>json: dictionary string values</string>
+			<key>scope</key>
+			<string>meta.structure.dictionary.value.json, constant.language.json, constant.numeric.json, meta.structure.dictionary.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F00000</string>
+			</dict>
+		</dict>
+		<!-- values -->
+		<dict>
+			<key>name</key>
+			<string>json: values</string>
+			<key>scope</key>
+			<string>meta.structure.dictionary.value.json string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0000F0</string>
+			</dict>
+		</dict>
+		<!-- arrays -->
+		<dict>
+			<key>name</key>
+			<string>json: array punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.array.begin.json, punctuation.definition.array.end.json, punctuation.separator.array.json</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#800080</string>
+			</dict>
+		</dict>
+		<!-- array string values -->
+		<dict>
+			<key>name</key>
+			<string>json: string values</string>
+			<key>scope</key>
+			<string>meta.structure.array.json string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<!-- dictionary punctuation -->
+		<dict>
+			<key>name</key>
+			<string>json: dictionary punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.dictionary.begin.json, punctuation.definition.dictionary.end.json, punctuation.separator.dictionary.key-value.json, punctuation.separator.dictionary.pair.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000080</string>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+
+		<!-- ---------------------------------------------------------- -->
+		<!-- sublime diff --------------------------------------------- -->
+		<!-- ---------------------------------------------------------- -->
+		<dict>
+			<key>name</key>
+			<string>sublime diff: header</string>
+			<key>scope</key>
+			<string>meta.diff, meta.diff.header</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0080FF</string>
+			</dict>
+		</dict>
+		<!-- diff deleted
+		<dict>
+			<key>name</key>
+			<string>sublime diff: deleted</string>
+			<key>scope</key>
+			<string>markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict> -->
+		<!-- diff inserted
+		<dict>
+			<key>name</key>
+			<string>sublime diff: inserted</string>
+			<key>scope</key>
+			<string>markup.inserted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008000</string>
+			</dict>
+		</dict> -->
+		<!-- diff changed
+		<dict>
+			<key>name</key>
+			<string>sublime diff: changed</string>
+			<key>scope</key>
+			<string>markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FD971F</string>
+			</dict>
+		</dict> -->
+
+		<!-- ---------------------------------------------------------- -->
+		<!-- sublime find in files ------------------------------------ -->
+		<!-- ---------------------------------------------------------- -->
+		<!-- matched lines -->
+		<dict>
+			<key>name</key>
+			<string>find in files: matched lines</string>
+			<key>scope</key>
+			<string>constant.numeric.line-number.find-in-files - match</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CCCCCC</string>
+			</dict>
+		</dict>
+		<!-- filenames -->
+		<dict>
+			<key>name</key>
+			<string>find in files: filenames</string>
+			<key>scope</key>
+			<string>entity.name.filename.find-in-files</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+  				<string>bold</string>
+  				<key>foreground</key>
+				<string>#000090</string>
+				<key>background</key>
+				<string>#E9E9E9</string>
+			</dict>
+		</dict>
+
+	</array>
+	<key>uuid</key>
+	<string>16ba0541-9fbf-4245-b9b9-a2819f81ef45</string>
+</dict>
+</plist>

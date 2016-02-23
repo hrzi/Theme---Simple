@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Hrzi</string>
+	<key>comment</key>
+	<string>Simple Dark Color Scheme with CFML support for Sublime Text</string>
+	<key>name</key>
+	<string>Simple Light Color Sheme</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#242424</string>
+				<key>caret</key>
+				<string>#F8F8F0</string>
+				<key>foreground</key>
+				<string>#848484</string>
+				<key>invisibles</key>
+				<string>#CC0000</string>
+				<key>lineHighlight</key>
+				<string>#90909010</string>
+				<key>selection</key>
+				<string>#49483E</string>
+				<key>selectionBorder</key>
+				<string>#49483E</string>
+				<key>findHighlight</key>
+				<string>#8080FF</string>
+				<key>findHighlightForeground</key>
+				<string>#FFFFC0</string>
+				<key>gutterForeground</key>
+				<string>#484848</string>
+				<key>gutter</key>
+				<string>#282828</string><!-- 272822 -->
+				<key>guide</key>
+				<string>#363636</string>
+				<key>stackGuide</key>
+				<string>#484848</string>
+				<key>activeGuide</key>
+				<string>#666666</string>
+				<key>bracketsForeground</key>
+				<string>#FF0000</string>
+				<key>bracketsOptions</key>
+				<string>foreground</string>
+				<key>bracketContentsForeground</key>
+				<string>#FF0000</string>
+				<key>bracketContentsOptions</key>
+				<string>stippled_underline foreground</string>
+				<key>tagsForeground</key>
+				<string>#FFFFFF</string>
+				<key>tagsOptions</key>
+				<!-- <string>stippled_underline foreground</string> -->
+				<string>stippled_underline foreground</string>
+			</dict>
+		</dict>
+		<!-- Comments -->
+		<dict>
+			<key>name</key>
+			<string>Comments</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#808080</string>
+				<key>background</key>
+				<string>#FFFFFF08</string>
+			</dict>
+		</dict>
+		<!-- Invalid -->
+		<dict>
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#CC000020</string>
+			</dict>
+		</dict>
+		<!-- Numbers -->
+		<dict>
+			<key>name</key>
+			<string>Numeric</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#AE81FF</string>
+			</dict>
+		</dict>
+		<!-- Strings
+		<dict>
+			<key>name</key>
+			<string>Strings</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CFCFC2</string>
+			</dict>
+		</dict>
+		 -->
+		<!-- Quoted strings -->
+		<dict>
+			<key>name</key>
+			<string>Single Quoted, Double Quoted</string>
+			<key>scope</key>
+			<string>string.quoted.single, string.quoted.double</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9999C0</string>
+			</dict>
+		</dict>			
+		<!-- Constants -->
+		<dict>
+			<key>name</key>
+			<string>Built-in Constants</string>
+			<key>scope</key>
+			<string>constant.language, constant.character, constant.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+			</dict>
+		</dict>
+		<!-- Storages -->
+		<dict>
+			<key>name</key>
+			<string>Storages</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#336699</string>
+			</dict>
+		</dict>
+		<!-- Keywords -->
+		<dict>
+			<key>name</key>
+			<string>Keywords</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6699CC</string>
+			</dict>
+		</dict>
+		<!-- Support -->
+		<dict>
+			<key>name</key>
+			<string>Support</string>
+			<key>scope</key>
+			<string>support</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0060C0</string>
+			</dict>
+		</dict>
+		<!-- Support functions -->
+		<dict>
+			<key>name</key>
+			<string>Support Functions</string>
+			<key>scope</key>
+			<string>support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#906090</string>
+			</dict>
+		</dict>
+		<!-- Functions -->
+		<dict>
+			<key>name</key>
+			<string>Functions</string>
+			<key>scope</key>
+			<string>entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#903090</string>
+			</dict>
+		</dict>
+		<!-- Function arguments -->
+		<dict>
+			<key>name</key>
+			<string>Function arguments</string>
+			<key>scope</key>
+			<string>variable.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#808080</string>
+			</dict>
+		</dict> 
+		<!-- Tags -->
+		<dict>
+			<key>name</key>
+			<string>Tags</string>
+			<key>scope</key>
+			<string>entity.name.tag, punctuation.definition.tag.begin, punctuation.definition.tag.end, entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#8080A0</string>
+			</dict>
+		</dict>
+
+		<!-- cfml -->
+		<dict>
+			<key>name</key>
+			<string>cfml: tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.cfml, entity.name.tag.script.cfml, punctuation.definition.tag.begin.cfml, punctuation.definition.tag.end.cfml, entity.other.attribute-name.cfml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CC6666</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>cfml: scopes</string>
+			<key>scope</key>
+			<string>variable.language.scope.cfml</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>cfml: cffunction</string>
+			<key>scope</key>
+			<string>entity.name.tag.cfml storage.type.function.cfml, entity.name.tag.cfml storage.type.class.cfml</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#CC6666</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>cfml: params overide</string>
+			<key>scope</key>
+			<string>string.quoted entity.name.function.cfml, string.quoted storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C0C0C0</string>
+			</dict>
+		</dict>
+		<!-- sql -->
+		<dict>
+			<key>name</key>
+			<string>sql: prefix</string>
+			<key>scope</key>
+			<string>source.sql constant.other.database-name.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000090</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>sql: fields</string>
+			<key>scope</key>
+			<string>source.sql constant.other.table-name.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>sql: keywords</string>
+			<key>scope</key>
+			<string>source.sql keyword.other.DML.sql, source.sql keyword.other.DDL.create.II.sql, source.sql support.function.string.sql</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#000090</string>
+			</dict>
+		</dict>
+
+
+		<!-- css -->
+		<dict>
+			<key>name</key>
+			<string>css: tag names</string>
+			<key>scope</key>
+			<string>meta.selector.css entity.name.tag.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css: properties</string>
+			<key>scope</key>
+			<string>support.type.property-name.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#303030</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css: control</string>
+			<key>scope</key>
+			<string>keyword.control.at-rule.charset.css, keyword.control.at-rule.font-face.css, keyword.control.at-rule.import.css, keyword.control.at-rule.media.css, meta.at-rule.media.css support.constant.media.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008080</string>
+			</dict>
+		</dict>
+
+		<!-- html doctype tags -->
+		<dict>
+			<key>name</key>
+			<string>html: doctype tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.doctype.html, meta.tag.sgml, string.quoted.double.doctype.identifiers-and-DTDs.html, entity.name.tag.structure, meta.tag.structure.any.html punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#0080FF</string>
+			</dict>
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>html: doctype tags</string>
+			<key>scope</key>
+			<string>entity.name.tag.block.any.html, meta.tag.block.any.html entity.other.attribute-name.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008080</string>
+			</dict>
+		</dict>
+
+		<!-- 
+			sublime diff
+		-->
+		<dict>
+			<key>name</key>
+			<string>sublime diff: header</string>
+			<key>scope</key>
+			<string>meta.diff, meta.diff.header</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0080FF</string>
+			</dict>
+		</dict>
+		<!-- diff deleted -->
+		<dict>
+			<key>name</key>
+			<string>sublime diff: deleted</string>
+			<key>scope</key>
+			<string>markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800000</string>
+			</dict>
+		</dict>
+		<!-- diff inserted -->
+		<dict>
+			<key>name</key>
+			<string>sublime diff: inserted</string>
+			<key>scope</key>
+			<string>markup.inserted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008000</string>
+			</dict>
+		</dict>
+		<!-- diff changed -->
+		<dict>
+			<key>name</key>
+			<string>sublime diff: changed</string>
+			<key>scope</key>
+			<string>markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FD971F</string>
+			</dict>
+		</dict>
+
+		<!--
+			sublime find in files
+		-->
+		<!-- matched lines -->
+		<dict>
+			<key>name</key>
+			<string>find in files: matched lines</string>
+			<key>scope</key>
+			<string>constant.numeric.line-number.find-in-files - match</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CCCCCC</string>
+			</dict>
+		</dict>
+		<!-- filenames -->
+		<dict>
+			<key>name</key>
+			<string>find in files: filenames</string>
+			<key>scope</key>
+			<string>entity.name.filename.find-in-files</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+  				<string>bold</string>
+  				<key>foreground</key>
+				<string>#000090</string>
+				<key>background</key>
+				<string>#E9E9E9</string>
+			</dict>
+		</dict>
+
+	</array>
+	<key>uuid</key>
+	<string>16ba0541-9fbf-4245-b9b9-a2819f81ef45</string>
+</dict>
+</plist>
